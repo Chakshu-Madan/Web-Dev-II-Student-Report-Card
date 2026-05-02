@@ -6,8 +6,8 @@ A React application to display and manage student scores, built as part of **Web
 
 ## 📸 Preview
 
-Student Report Card    (<img width="1347" height="607" alt="image" src="https://github.com/user-attachments/assets/1f173a1c-988f-4b67-bc93-5ce4cea1fe19" />
-)
+Student Report Card    <img width="1347" height="607" alt="image" src="https://github.com/user-attachments/assets/1f173a1c-988f-4b67-bc93-5ce4cea1fe19" />
+
 
 ---
 
