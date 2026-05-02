@@ -1,16 +1,115 @@
-# React + Vite
+# 📋 Student Report Card
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application to display and manage student scores, built as part of **Web Dev II — Unit 3 Lab Assignment**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📸 Preview
 
-## React Compiler
+![Student Report Card](./preview.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React 18** — UI library
+- **Vite** — build tool & dev server
+- **JavaScript (JSX)** — logic & templating
+- **Pure CSS** — styling (no Tailwind, no libraries)
+
+---
+
+## ✨ Features
+
+- 📊 View all students and their scores in a table
+- ✅ Pass / Fail status based on score (Pass ≥ 40, Fail < 40)
+- ✏️ Update any student's score dynamically
+- ➕ Add new students using a form
+- 🎨 Dark black-blue themed UI
+
+---
+
+## 🧩 Component Structure
+
+```
+App
+├── Header
+├── StudentTable
+│   └── StudentRow (reusable)
+└── AddStudentForm
+```
+
+| Component | Description |
+|---|---|
+| `App` | Root component — holds all state |
+| `Header` | Displays app title |
+| `StudentTable` | Renders the student data table |
+| `StudentRow` | Reusable row for each student |
+| `AddStudentForm` | Form to add a new student |
+
+---
+
+## ⚙️ Getting Started
+
+### Prerequisites
+- Node.js installed on your machine
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/student-report-card.git
+
+# Navigate into the project
+cd student-report-card
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+Then open `http://localhost:5173` in your browser.
+
+---
+
+## 📚 Concepts Used
+
+- `useState` hook for state management
+- Props for passing data between components
+- Conditional rendering for Pass/Fail status
+- Array `.map()` for rendering lists
+- Controlled inputs for form handling
+- Component-based architecture
+
+---
+
+## 📁 Project Structure
+
+```
+student-report-card/
+├── index.html
+├── package.json
+├── vite.config.js
+└── src/
+    ├── main.jsx
+    ├── App.jsx
+    ├── App.css
+    ├── index.css
+    └── components/
+        ├── Header.jsx
+        ├── Header.css
+        ├── StudentTable.jsx
+        ├── StudentTable.css
+        ├── StudentRow.jsx
+        ├── StudentRow.css
+        ├── AddStudentForm.jsx
+        └── AddStudentForm.css
+```
+
+---
+
+## 👨‍💻 Author
+
+Made with 💙 for Web Dev II — Unit 3 Lab Assignment
